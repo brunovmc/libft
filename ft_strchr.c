@@ -14,14 +14,12 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	x;
 	int		i;
 	int		len;
 	char	*scpy;
 
 	scpy = (char *)s;
 	i = 0;
-	x = ((char)c);
 	len = ft_strlen(scpy);
 	if (c == '\0')
 		return (&scpy[len]);
