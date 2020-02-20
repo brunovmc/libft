@@ -6,7 +6,7 @@
 #    By: bvidigal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/22 00:04:10 by bvidigal          #+#    #+#              #
-#    Updated: 2020/02/06 14:54:32 by bvidigal         ###   ########.fr        #
+#    Updated: 2020/02/19 21:27:42 by bvidigal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,8 +41,24 @@ SRC = ft_memset.c \
 	ft_substr.c\
 	ft_strjoin.c\
 	ft_strtrim.c\
-	ft_split.c
+	ft_split.c\
+	ft_itoa.c\
+	ft_putchar_fd.c\
+	ft_strmapi.c\
+	ft_putstr_fd.c\
+	ft_putendl_fd.c\
+	ft_putnbr_fd.c
+SRCB = ft_lstnew.c\
+	   ft_lstadd_front.c\
+	   ft_lstsize.c\
+	   ft_lstlast.c\
+	   ft_lstadd_back.c\
+	   ft_lstdelone.c\
+	   ft_lstclear.c\
+	   ft_lstiter.c\
+	   ft_lstmap.c
 OBJ = $(SRC:.c=.o)
+BOBJ = $(SRCB:.c=.o)
 all: $(NAME)
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
