@@ -6,7 +6,7 @@
 /*   By: bvidigal <bvidigal@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 21:00:20 by bvidigal          #+#    #+#             */
-/*   Updated: 2020/02/19 21:02:07 by bvidigal         ###   ########.fr       */
+/*   Updated: 2020/02/19 21:50:45 by bvidigal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list		*ft_lstlast(t_list *lst)
 		return (NULL);
 	while (lst->next != 0)
 	{
-		lst =lst->next;
+		lst = lst->next;
 	}
 	return (lst);
 }
